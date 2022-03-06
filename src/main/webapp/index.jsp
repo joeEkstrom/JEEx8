@@ -14,7 +14,8 @@
     <body>
         <!--Set up the message to capture any errors-->
        
-        <form action="" method="post">
+        <form action="EmailServlet" method="post">
+        	<p>${message}</p>
             <input type="hidden" name="action" value="add" />
             <table>
                 <tr>
@@ -34,6 +35,7 @@
                     <td><input type="submit" value="Submit" name="btnSubmit"/></td>
                 </tr>
             </table>  
+            
         </form>
     </body>
 </html>
